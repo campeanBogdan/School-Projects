@@ -1,0 +1,1 @@
+insert into `customer` values ('1', 'Campean Bogdan', 'Str. Victoriei', '0123');
