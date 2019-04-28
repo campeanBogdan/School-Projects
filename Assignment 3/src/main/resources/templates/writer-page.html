@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Writer</title>
+</head>
+<body>
+
+<h1 align="center"> Welcome, writer! </h1>
+<h2 align="center" th:text="'Login as: ' + ${writer.username}" />
+<a href="/"> Logout </a>
+<br>
+<br>
+<br>
+
+<h3> Insert new article </h3>
+
+<form action="/writer-page" method="POST">
+    <fieldset>
+        <legend> New article data: </legend>
+        <table>
+            <tr>
+                <td>Author: </td>
+                <td><input name="author" type="text" placeholder="Your username"/></td>
+            </tr>
+            <tr>
+                <td>Title: </td>
+                <td><input name="title" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Abstract: </td>
+                <td><input name="abs" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Category: </td>
+                <td><input name="category" type="text"/></td>
+            </tr>
+            <tr>
+                <td>Body: </td>
+                <td><textarea rows="10" cols="100" name="body"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="Create" value="Create" />
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<form action="/writer-page" method="POST">
+    <fieldset>
+        <legend> Article title: </legend>
+        <table>
+            <tr>
+                <td> Title: </td>
+                <td><input name="option" type="text" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="Delete" value="Delete" />
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<h3 align="center"><a href="writer-view-articles"> View my articles </a></h3>
+
+</body>
+</html>

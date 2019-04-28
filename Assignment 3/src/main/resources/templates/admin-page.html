@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+</head>
+<body>
+
+<h1 align="center"> Welcome, admin! </h1>
+<h2 align="center" th:text="'Login as: ' + ${admin.username}" />
+<a href="/"> Logout </a>
+<br>
+<br>
+<br>
+
+<h3> Insert new writer </h3>
+
+<form action="/admin-page" method="POST">
+    <fieldset>
+        <legend> New writer data: </legend>
+        <table>
+            <tr>
+                <label><b>
+                    Username: <input type="text" placeholder="Writer's username" name="username" required>
+                    Password: <input type="password" placeholder="Writer's password" name="password" required>
+                    <button type="submit" name="Create" value="Create"> Create </button>
+                </b></label>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<h3> Delete writer </h3>
+
+<form action="/admin-page" method="POST">
+    <fieldset>
+        <legend> Writer data: </legend>
+        <table>
+            <tr>
+                <label><b>
+                    Username: <input type="text" placeholder="Writer's username" name="option" required>
+                    <button type="submit" name="Delete" value="Delete"> Delete </button>
+                </b></label>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<br>
+<h3 align="center"><a href="/admin-view-writers">View all writers </a></h3>
+
+</body>
+</html>

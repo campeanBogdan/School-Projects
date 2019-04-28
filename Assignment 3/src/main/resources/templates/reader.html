@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml" xmlns:form="http://www.w3.org/1999/xhtml"
+      xmlns:spring="http://jboss.org/xml/ns/javax/validation/mapping" xmlns:c="http://www.w3.org/1999/XSL/Transform">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Reader </title>
+    <style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+
+<h1 align="center">Welcome!</h1>
+<a href="/"> Go to homepage </a>
+<br>
+<br>
+
+
+<form action="/reader" method="POST">
+    <fieldset>
+        <legend> Filter by: </legend>
+        <table>
+            <tr>
+                <td><input name="option" type="text"></td>
+                <td colspan="2">
+                    <input type="submit" value="Submit" />
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+
+<hr>
+<h2 align="left">All articles</h2>
+<br>
+
+<tr th:each="article : ${articles}">
+    <button class="accordion" th:text="${article.title} + ': ' + ${article.category}" />
+    <div class="panel">
+        <td th:text="'Author: ' + ${article.author}" />
+        <br>
+        <td th:text="'Abstract: ' + ${article.abs}" />
+        <br>
+        <hr>
+        <button class="accordion" th:text="'Read full article'" />
+            <div class="panel">
+                <td th:text="${article.body}" />
+            </div>
+        <br>
+        <br>
+    </div>
+</tr>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

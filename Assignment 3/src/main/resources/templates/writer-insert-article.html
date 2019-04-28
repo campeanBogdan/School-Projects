@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Success!</title>
+</head>
+<body>
+
+<h2> Article was addedd successfully! </h2>
+<br>
+<h3 th:text="'Article data: '" />
+<h3 th:text="'-author: ' + ${article.author}"/>
+<h3 th:text="'-title: ' + ${article.title}"/>
+<h3 th:text="'-abstract: ' + ${article.abs}"/>
+<h3 th:text="'-category: ' + ${article.category}"/>
+<h3 th:text="'-body: ' + ${article.body}"/>
+<br>
+<br>
+<a href="/writer-page"> Go back </a>
+
+</body>
+</html>
