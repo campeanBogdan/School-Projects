@@ -1,0 +1,94 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
+| Date         : Tue May 16 00:41:02 2017
+| Host         : DESKTOP-FO43JJ9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file nr_control_sets_placed.rpt
+| Design       : nr
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |   154 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              23 |           11 |
+| No           | No                    | Yes                    |             134 |           38 |
+| No           | Yes                   | No                     |              25 |           16 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              64 |           28 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+---------------+----------------------+------------------+----------------+
+|      Clock Signal     | Enable Signal |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++-----------------------+---------------+----------------------+------------------+----------------+
+|  OK_reg[1]/G0         |               |                      |                1 |              1 |
+|  OK_reg[0]/G0         |               |                      |                1 |              1 |
+|  OK_2_reg/G0          |               |                      |                1 |              1 |
+|  OK_4_reg/G0          |               |                      |                1 |              1 |
+|  OK_3_reg_i_2_n_0     |               | OK_118696_out        |                1 |              1 |
+|  OK_108699_out        |               | OK_1_reg_i_2_n_0     |                1 |              1 |
+|  ANOD_reg[0]_i_2_n_0  |               | ANOD_reg[0]_i_3_n_0  |                1 |              1 |
+|  ANOD_reg[1]_i_2_n_0  |               | ANOD_reg[1]_i_3_n_0  |                1 |              1 |
+|  ANOD_reg[2]_i_2_n_0  |               | ANOD_reg[2]_i_3_n_0  |                1 |              1 |
+|  ANOD_reg[3]_i_2_n_0  |               | ANOD_reg[3]_i_3_n_0  |                1 |              1 |
+|  BUTTON_3_IBUF_BUFG   |               |                      |                1 |              1 |
+|  BUTTON_3_IBUF_BUFG   |               | SEMN_reg_LDC_i_2_n_0 |                1 |              1 |
+|  BUTTON_3_IBUF_BUFG   | A[10]_i_1_n_0 | SEMN_reg_LDC_i_1_n_0 |                1 |              1 |
+|  SEMN_reg_LDC_i_1_n_0 |               | SEMN_reg_LDC_i_2_n_0 |                1 |              1 |
+|  CATOD_reg[1]_i_2_n_0 |               | CATOD_reg[1]_i_3_n_0 |                1 |              2 |
+|  CATOD_reg[2]_i_2_n_0 |               | CATOD_reg[2]_i_3_n_0 |                1 |              2 |
+|  BUTTON_2_IBUF_BUFG   |               | RES                  |                2 |              2 |
+|  DEB_C0               |               |                      |                1 |              3 |
+|  CATOD_reg[0]_i_2_n_0 |               | CATOD_reg[0]_i_3_n_0 |                2 |              3 |
+|  BUTTON_5_1           |               | RES                  |                3 |              3 |
+|  DEB_B0               |               |                      |                1 |              3 |
+|  R_reg[10]_i_2_n_0    |               | R_reg[10]_i_3_n_0    |                5 |             11 |
+|  c_z_reg[3]_i_2_n_0   |               |                      |                4 |             12 |
+|  DD                   | A[10]_i_1_n_0 | RES                  |                7 |             20 |
+|  CLK_IBUF_BUFG        |               | clear                |                8 |             32 |
+|  CLK_IBUF_BUFG        |               | clear__0             |                8 |             32 |
+|  CLK_IBUF_BUFG        |               | n_reg[0]_i_2_n_1     |                8 |             32 |
+|  CLK_IBUF_BUFG        |               | y_reg[0]_i_2_n_1     |                8 |             32 |
+|  BUTTON_1_IBUF_BUFG   | p_0_in        | RES                  |               20 |             43 |
++-----------------------+---------------+----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                    14 |
+| 2      |                     3 |
+| 3      |                     4 |
+| 11     |                     1 |
+| 12     |                     1 |
+| 16+    |                     6 |
++--------+-----------------------+
+
+

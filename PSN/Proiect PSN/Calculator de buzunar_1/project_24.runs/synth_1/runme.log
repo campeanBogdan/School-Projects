@@ -1,0 +1,693 @@
+
+*** Running vivado
+    with args -log nr.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source nr.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source nr.tcl -notrace
+Command: synth_design -top nr -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12412 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 283.031 ; gain = 71.871
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2048] function comp does not always return a value [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'nr' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:21]
+	Parameter NR_BITI bound to: 11 - type: integer 
+WARNING: [Synth 8-614] signal 'DEB_B' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:368]
+WARNING: [Synth 8-614] signal 'DEB_C' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:368]
+WARNING: [Synth 8-614] signal 'DEB_D' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:368]
+WARNING: [Synth 8-614] signal 'DDD' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:368]
+WARNING: [Synth 8-614] signal 'DD' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:368]
+WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:368]
+WARNING: [Synth 8-614] signal 'Q' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'BUTTON_1' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'OK_1' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'K' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'OK_2' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'OK_3' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'OK_4' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'R' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'RES' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-614] signal 'OK' is read in the process but is not in the sensitivity list [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:484]
+WARNING: [Synth 8-3848] Net SEMN_OUT in module/entity nr does not have driver. [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'nr' (1#1) [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:21]
+WARNING: [Synth 8-3331] design nr has unconnected port SEMN_OUT
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 701.508 ; gain = 490.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 701.508 ; gain = 490.348
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Q[6]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Q[6]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Q[5]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Q[5]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Q[4]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Q[4]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Q[3]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Q[3]'. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bogdan/project_24/project_24.srcs/constrs_1/new/f.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nr_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nr_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 952.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 952.535 ; gain = 741.375
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-5544] ROM "B0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "R61" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R60" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R58" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R56" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R54" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R52" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R50" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R48" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R46" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R44" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R42" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R40" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R38" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R36" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R34" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R32" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R30" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R28" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R26" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R24" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R22" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R18" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R16" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R14" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R12" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R8" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "R125" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R124" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R122" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R120" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R118" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R116" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R114" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R112" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R110" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R108" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R106" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R104" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R102" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R100" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R98" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R96" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R94" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R92" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R90" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R88" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R86" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R84" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R82" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R80" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R78" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R76" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R74" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R72" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R70" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R68" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R66" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R64" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R62" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R60" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R58" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R56" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R54" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R52" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R50" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R48" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R46" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R44" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R42" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R40" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R38" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R36" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R34" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R32" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R30" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R28" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R26" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R24" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R22" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R20" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R18" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R16" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R14" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R12" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R10" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R8" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R6" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R4" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "R" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R61" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R60" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R58" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R56" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R54" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R52" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R50" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R48" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R46" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R44" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R42" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R40" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R38" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R36" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R34" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R32" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R30" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R28" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R26" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R24" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R22" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R20" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R18" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R16" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R14" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R12" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R8" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'ANOD_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:580]
+WARNING: [Synth 8-327] inferring latch for variable 'CATOD_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:583]
+WARNING: [Synth 8-327] inferring latch for variable 'DEB_B_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:432]
+WARNING: [Synth 8-327] inferring latch for variable 'R_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:611]
+WARNING: [Synth 8-327] inferring latch for variable 'c_s_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:531]
+WARNING: [Synth 8-327] inferring latch for variable 'c_z_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:531]
+WARNING: [Synth 8-327] inferring latch for variable 'OK_1_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:382]
+WARNING: [Synth 8-327] inferring latch for variable 'OK_2_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:383]
+WARNING: [Synth 8-327] inferring latch for variable 'OK_3_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:384]
+WARNING: [Synth 8-327] inferring latch for variable 'OK_4_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:385]
+WARNING: [Synth 8-327] inferring latch for variable 'c_u_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:531]
+WARNING: [Synth 8-327] inferring latch for variable 'OK_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:415]
+WARNING: [Synth 8-327] inferring latch for variable 'DEB_C_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:438]
+WARNING: [Synth 8-327] inferring latch for variable 'P_reg' [C:/Users/Bogdan/project_24/project_24.srcs/sources_1/new/proiect.vhd:616]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:12 ; elapsed = 00:02:23 . Memory (MB): peak = 952.535 ; gain = 741.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |nr__GB0       |           1|     61310|
+|2     |nr__GB1       |           1|      8622|
+|3     |nr__GB2       |           1|     41142|
+|4     |nr__GB3       |           1|     19472|
+|5     |nr__GB4       |           1|     19549|
+|6     |nr__GB5       |           1|      5445|
+|7     |nr__GB6       |           1|     30502|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 45    
+	   9 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1271  
+	   3 Input      1 Bit         XORs := 882   
++---Registers : 
+	               11 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 33    
+	   2 Input     31 Bit        Muxes := 9     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5617  
+	   3 Input     11 Bit        Muxes := 68    
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 673   
+	   2 Input      7 Bit        Muxes := 68    
+	   4 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 2     
+	  12 Input      7 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 65    
+	   3 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 93    
+	   3 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3050  
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module nr 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 45    
+	   9 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1271  
+	   3 Input      1 Bit         XORs := 882   
++---Registers : 
+	               11 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 33    
+	   2 Input     31 Bit        Muxes := 9     
+	   5 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5617  
+	   3 Input     11 Bit        Muxes := 68    
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 673   
+	   2 Input      7 Bit        Muxes := 68    
+	   4 Input      7 Bit        Muxes := 2     
+	   3 Input      7 Bit        Muxes := 2     
+	  12 Input      7 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 65    
+	   3 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 93    
+	   3 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3050  
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design nr has unconnected port SEMN_OUT
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[31] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[30] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[29] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[28] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[27] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[26] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[25] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[24] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[23] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[22] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[21] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[20] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[19] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[18] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[17] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[16] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[15] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[14] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[13] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[12] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[11] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O22[10] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[31] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[30] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[29] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[28] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[27] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[26] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[25] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[24] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[23] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[22] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[21] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[20] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[19] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[18] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[17] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[16] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[15] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[14] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[13] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[12] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[11] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB0 has port O33[10] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'B_reg[7]' (FDCE) to 'B_reg[8]'
+INFO: [Synth 8-3886] merging instance 'B_reg[8]' (FDCE) to 'B_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\B_reg[9] )
+INFO: [Synth 8-3886] merging instance 'A_reg[7]' (FDCE) to 'A_reg[9]'
+INFO: [Synth 8-3886] merging instance 'A_reg[8]' (FDCE) to 'A_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\A_reg[9] )
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_S0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "CIFRA_U0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R4" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R8" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R10" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R12" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R14" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "R16" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3917] design nr__GB6 has port P[31] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[30] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[29] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[28] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[27] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[26] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[25] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[24] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[23] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[22] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[21] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[20] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[19] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[18] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[17] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[16] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[15] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[14] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[13] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[12] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[11] driven by constant 0
+WARNING: [Synth 8-3917] design nr__GB6 has port P[10] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 952.535 ; gain = 741.375
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |nr__GB0       |           1|     17676|
+|2     |nr__GB1       |           1|      3270|
+|3     |nr__GB2       |           1|      8383|
+|4     |nr__GB3       |           1|      4666|
+|5     |nr__GB4       |           1|     12408|
+|6     |nr__GB5       |           1|      1399|
+|7     |nr__GB6       |           1|     11059|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:20 ; elapsed = 00:03:47 . Memory (MB): peak = 964.035 ; gain = 752.875
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:28 ; elapsed = 00:03:55 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |nr__GB0       |           1|     17634|
+|2     |nr__GB1       |           1|      2850|
+|3     |nr__GB2       |           1|      7960|
+|4     |nr__GB3       |           1|      3517|
+|5     |nr__GB4       |           1|     10327|
+|6     |nr__GB5       |           1|      1102|
+|7     |nr__GB6       |           1|     10723|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:48 ; elapsed = 00:04:27 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |nr__GB0       |           1|      7616|
+|2     |nr__GB4       |           1|      4311|
+|3     |nr__GB6       |           1|      4604|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:52 ; elapsed = 00:04:31 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:52 ; elapsed = 00:04:31 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:00 ; elapsed = 00:04:40 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:00 ; elapsed = 00:04:40 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:01 ; elapsed = 00:04:41 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:01 ; elapsed = 00:04:41 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     4|
+|2     |CARRY4 |  1632|
+|3     |LUT1   |   477|
+|4     |LUT2   |  2939|
+|5     |LUT3   |  2387|
+|6     |LUT4   |  2866|
+|7     |LUT5   |  2454|
+|8     |LUT6   |  8836|
+|9     |MUXF7  |     3|
+|10    |FDCE   |   197|
+|11    |FDPE   |     1|
+|12    |FDRE   |     1|
+|13    |LD     |     6|
+|14    |LDC    |    28|
+|15    |LDCP   |     4|
+|16    |LDP    |     9|
+|17    |IBUF   |     6|
+|18    |OBUF   |    14|
+|19    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 21865|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:01 ; elapsed = 00:04:41 . Memory (MB): peak = 1004.422 ; gain = 793.262
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 81 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:02 ; elapsed = 00:04:21 . Memory (MB): peak = 1004.422 ; gain = 542.234
+Synthesis Optimization Complete : Time (s): cpu = 00:04:02 ; elapsed = 00:04:41 . Memory (MB): peak = 1004.422 ; gain = 793.262
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1685 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'nr' is not ideal for floorplanning, since the cellview 'nr' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  LD => LDCE: 6 instances
+  LDC => LDCE: 28 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 4 instances
+  LDP => LDPE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+224 Infos, 111 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:05 ; elapsed = 00:04:42 . Memory (MB): peak = 1004.422 ; gain = 793.262
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bogdan/project_24/project_24.runs/synth_1/nr.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1004.422 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May 16 00:39:32 2017...
