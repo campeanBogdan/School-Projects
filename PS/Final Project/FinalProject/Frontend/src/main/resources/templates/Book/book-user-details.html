@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+
+    <style>
+    .container {
+        background-color: lightgreen;
+    }
+    h3.id_border {border-style: double;}
+    .details {
+        background-color: white;
+        color: black;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="details">
+    <h2 align="center">
+        Title:
+        <span th:text="${book.title}">id</span>
+    </h2>
+</div>
+
+<div class="details">
+    <p>
+        <span>Id: </span>
+        <span th:text="${book.id}">title</span>
+    </p>
+    <p>
+        <span>Author: </span>
+        <span th:text="${book.author}">author</span>
+    </p>
+    <p>
+        <span>Description: </span>
+        <span th:text="${book.description}">description</span>
+    </p>
+</div>
+
+<div class="details">
+    <p>
+        <span> Borrowed by: </span>
+        <span th:text="${user.username}"></span>
+    </p>
+    <p>
+        <span> Start date: </span>
+        <span th:text="${borrowedData.startDate}"> startDate </span>
+    </p>
+    <p>
+        <span> End date: </span>
+        <span th:text="${borrowedData.endDate}"> endDate </span>
+    </p>
+    <p>
+        <span> Fine: </span>
+        <span th:text="${fine.sum}"> sum </span>
+    </p>
+</div>
+
+<div class="details">
+    <p>
+        Return book
+    </p>
+    <form action="/book/redirect-return" method="post">
+        <td>
+            <input type="text" name="userId" th:value="${user.id}">
+        </td>
+        <td>
+            <input type="text" name="bookId" th:value="${book.id}">
+        </td>
+        <button type="submit" name="Return" value="Return"> Return </button>
+    </form>
+</div>
+
+</body>
+</html>

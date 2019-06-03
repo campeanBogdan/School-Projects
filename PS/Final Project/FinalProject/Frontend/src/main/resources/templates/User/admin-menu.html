@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title> Admin </title>
+</head>
+<body>
+
+
+<h3> View <a href="admin-view-users"> users </a></h3>
+<h3> View <a th:href="'/book/view-books/' + @{${user.id}}"> books </a></h3>
+<h3> Insert <a href="/book/insert-book"> book </a></h3>
+
+<div>
+    <form action="/logout" method="post">
+        <button type="submit" name="Logout" value="Logout"> Logout </button>
+    </form>
+</div>
+
+</body>
+</html>

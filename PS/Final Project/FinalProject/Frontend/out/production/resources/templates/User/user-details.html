@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+
+    <style>
+    .container {
+        background-color: lightgreen;
+    }
+    h3.id_border {border-style: double;}
+    .details {
+        background-color: white;
+        color: black;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="details">
+    <h2 align="center">
+        Username:
+        <span th:text="${user.username}">username</span>
+    </h2>
+</div>
+
+<div class="details">
+    <p>
+        <span>Id: </span>
+        <span th:text="${user.id}">id</span>
+    </p>
+    <p>
+        <span>Password: </span>
+        <span th:text="${user.password}">password</span>
+    </p>
+    <p>
+        <span>Role: </span>
+        <span th:text="${user.role}">role</span>
+    </p>
+</div>
+
+</body>
+</html>

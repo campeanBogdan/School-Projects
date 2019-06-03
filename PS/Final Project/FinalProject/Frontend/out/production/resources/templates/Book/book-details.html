@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+
+<style>
+    .container {
+        background-color: lightgreen;
+    }
+    h3.id_border {border-style: double;}
+    .details {
+        background-color: white;
+        color: black;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="details">
+    <h2 align="center">
+        Title:
+        <span th:text="${book.title}">id</span>
+    </h2>
+</div>
+
+<div class="details">
+    <p>
+        <span>Id: </span>
+        <span th:text="${book.id}">title</span>
+    </p>
+    <p>
+        <span>Author: </span>
+        <span th:text="${book.author}">author</span>
+    </p>
+    <p>
+        <span>Stock: </span>
+        <span th:text="${book.stock}">stock</span>
+    </p>
+    <p>
+        <span>Description: </span>
+        <span th:text="${book.description}">description</span>
+    </p>
+
+    <form action="/book/redirect" method="post">
+        <fieldset>
+            <table>
+                <tr>
+                    <td> User Id: </td>
+                    <td><input type="text" name="userId" th:value="${user.id}"></td>
+                </tr>
+                <tr>
+                    <td> Book Id: </td>
+                    <td><input type="text" name="bookId" th:value="${book.id}"></td>
+                </tr>
+                <tr>
+                    <td> Start Date: </td>
+                    <td><input type="date" placeholder="Enter start date" name="startDate" required></td>
+                </tr>
+                <tr>
+                    <td> End Date: </td>
+                    <td><input type="date" placeholder="Enter end date" name="endDate" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" name="Borrow" value="Borrow"> Borrow </button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+text-align: center;
+padding: 8px;
+}
+th {
+background-color: #4CAF50;
+color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+
+<body>
+
+<h2 align="center"> All books</h2>
+<br>
+<hr>
+
+<table>
+    <thead>
+    <tr>
+        <th> Id </th>
+        <th> Title </th>
+        <th> Details </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:if="${books.empty}">
+        <h2> There are no books borrowed </h2>
+    </tr>
+    <tr th:if="${books != null}" th:each="book : ${books}">
+        <td><span th:text="${book.id}"> Id </span></td>
+        <td><span th:text="${book.title}"> Title </span></td>
+        <td><a th:href="@{${user.id}} + '/' + @{${book.id}}"> Show </a></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

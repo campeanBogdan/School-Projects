@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+
+<h3> View available <a th:href="'/book/view-books/' + @{${user.id}}"> books </a></h3>
+<h3> View borrowed <a th:href="'/book/view-borrowed-books/' + @{${user.id}}"> books </a></h3>
+
+</body>
+</html>

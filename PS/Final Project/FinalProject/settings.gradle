@@ -1,0 +1,10 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+	}
+}
+rootProject.name = 'FinalProject'
+include 'Backend'
+include 'Frontend'
+include 'Common'
+

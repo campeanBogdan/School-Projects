@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+
+    <style>
+    .container {
+        background-color: lightgreen;
+    }
+    h3.id_border {border-style: double;}
+    .details {
+        background-color: white;
+        color: black;
+        margin: 20px;
+        padding: 20px;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="details">
+    <h2 align="center">
+        Title:
+        <span th:text="${book.title}">id</span>
+    </h2>
+</div>
+
+<div class="details">
+    <p>
+        <span>Id: </span>
+        <span th:text="${book.id}">title</span>
+    </p>
+    <p>
+        <span>Author: </span>
+        <span th:text="${book.author}">author</span>
+    </p>
+    <p>
+        <span>Stock: </span>
+        <span th:text="${book.stock}">stock</span>
+    </p>
+    <p>
+        <span>Description: </span>
+        <span th:text="${book.description}">description</span>
+    </p>
+</div>
+
+<form action="/book/borrow-book" method="post">
+    <button type="submit" name="Borrow" value="Borrow"> Borrow </button>
+</form>
+
+</body>
+</html>

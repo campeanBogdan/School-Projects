@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert book</title>
+</head>
+<body>
+
+<form action="/book/insert-book" method="post">
+    <fieldset>
+        <table>
+            <tr>
+                <td> Title: </td>
+                <td><input type="text" placeholder="Enter Title" name="title"></td>
+            </tr>
+            <tr>
+                <td> Description: </td>
+                <td><input type="text" placeholder="Enter description" name="description"></td>
+            </tr>
+            <tr>
+                <td> Author: </td>
+                <td><input type="text" placeholder="Enter author" name="author"></td>
+            </tr>
+            <tr>
+                <td> Stock: </td>
+                <td><input type="text" placeholder="Enter stock" name="stock"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit" name="Insert" value="Insert"> Insert </button>
+                </td>
+
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+</body>
+</html>
